@@ -23,6 +23,20 @@ nav{
 }
 .logo{
     width:  110px;
+    animation: moves 2.5s linear infinite;
+}
+
+@keyframes moves {
+    0%{
+        transform: translate(-15px, 0);
+    }
+    50%{
+        transform: translate(0, -15px);
+    }
+    
+    100%{
+        transform: translate(-15px, 0);
+    }
 }
 
 nav ul{
@@ -52,6 +66,7 @@ a:hover{
     border-radius: 30px;
     margin-left: 30px;  
 } 
+
 .btn:hover{
     color: orange;
 }
@@ -83,6 +98,19 @@ a:hover{
 .col-2 h1{
     font-size: 62px;
     font-weight: 600;
+    animation: moved 2.5s linear infinite;
+}
+@keyframes moved {
+    0%{
+        transform: translate(-15px, 0);
+    }
+    50%{
+        transform: translate(0, -15px);
+    }
+    
+    100%{
+        transform: translate(-15px, 0);
+    }
 }
 
 span{
